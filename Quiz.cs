@@ -34,26 +34,13 @@ namespace AnythingIsBetterThanCisco
                              $"routers && switches")
             };
 
-            showAnswer = false;
-            textboxQ.Text = "insert question here";
-            textboxA.Text = "insert answer here";
+            
         }
 
         private void answerButton_Click(object sender, EventArgs e)
         {
             showAnswer = showAnswer ? false : true;
-            if (showAnswer)
-            {
-                answerButton.Text = answerButton.Text.Replace("show", "hide");
-                textboxA.Visible = true;
-                answerPicture.Visible = true;
-            }
-            if (! showAnswer)
-            {
-                answerButton.Text = answerButton.Text.Replace("hide", "show");
-                textboxA.Visible = false;
-                answerPicture.Visible = false;
-            }
+            toggleAnswer();
         }
 
         private void prevButton_Click(object sender, EventArgs e)
@@ -68,10 +55,20 @@ namespace AnythingIsBetterThanCisco
             refresh();
         }
 
+        private void toggleAnswer()
+        {
+            answerButton.Text = showAnswer ? "hide answer" : "show answer";
+            textboxA.Visible = showAnswer;
+            answerPicture.Visible = showAnswer;
+        }
+
         private void refresh()
         {
+            showAnswer = false;
             prevButton.Enabled = questionIndex >= 0;
             nextButton.Enabled = questionIndex <= questions.Count();
+            textboxQ.Text = "insert question here";
+            textboxA.Text = "insert answer here";
         }
     }
 }
