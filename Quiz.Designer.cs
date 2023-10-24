@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.questionPicture = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textboxQ = new System.Windows.Forms.Label();
             this.answerButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.textboxA = new System.Windows.Forms.Label();
             this.answerPicture = new System.Windows.Forms.PictureBox();
             this.prevButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
@@ -52,14 +52,14 @@
             this.questionPicture.TabIndex = 0;
             this.questionPicture.TabStop = false;
             // 
-            // label1
+            // textboxQ
             // 
-            this.label1.Font = new System.Drawing.Font("Leelawadee", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(563, 220);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "question";
+            this.textboxQ.Font = new System.Drawing.Font("Leelawadee", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxQ.Location = new System.Drawing.Point(12, 12);
+            this.textboxQ.Name = "textboxQ";
+            this.textboxQ.Size = new System.Drawing.Size(563, 220);
+            this.textboxQ.TabIndex = 1;
+            this.textboxQ.Text = "question";
             // 
             // answerButton
             // 
@@ -73,15 +73,15 @@
             this.answerButton.UseVisualStyleBackColor = true;
             this.answerButton.Click += new System.EventHandler(this.answerButton_Click);
             // 
-            // label2
+            // textboxA
             // 
-            this.label2.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 238);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(563, 195);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "answer";
-            this.label2.Visible = false;
+            this.textboxA.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxA.Location = new System.Drawing.Point(13, 238);
+            this.textboxA.Name = "textboxA";
+            this.textboxA.Size = new System.Drawing.Size(563, 195);
+            this.textboxA.TabIndex = 3;
+            this.textboxA.Text = "answer";
+            this.textboxA.Visible = false;
             // 
             // answerPicture
             // 
@@ -129,9 +129,9 @@
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.prevButton);
             this.Controls.Add(this.answerPicture);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textboxA);
             this.Controls.Add(this.answerButton);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textboxQ);
             this.Controls.Add(this.questionPicture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -146,9 +146,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox questionPicture;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label textboxQ;
         private System.Windows.Forms.Button answerButton;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label textboxA;
         private System.Windows.Forms.PictureBox answerPicture;
         private System.Windows.Forms.Button prevButton;
         private System.Windows.Forms.Button nextButton;

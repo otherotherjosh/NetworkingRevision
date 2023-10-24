@@ -35,8 +35,8 @@ namespace AnythingIsBetterThanCisco
             };
 
             showAnswer = false;
-            label1.Text = "insert question here";
-            label2.Text = "insert answer here";
+            textboxQ.Text = "insert question here";
+            textboxA.Text = "insert answer here";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -45,13 +45,13 @@ namespace AnythingIsBetterThanCisco
             if (showAnswer)
             {
                 answerButton.Text = answerButton.Text.Replace("show", "hide");
-                label2.Visible = true;
+                textboxA.Visible = true;
                 answerPicture.Visible = true;
             }
             if (! showAnswer)
             {
                 answerButton.Text = answerButton.Text.Replace("hide", "show");
-                label2.Visible = false;
+                textboxA.Visible = false;
                 answerPicture.Visible = false;
             }
         }
