@@ -9,8 +9,6 @@ namespace AnythingIsBetterThanCisco
 {
     public static class Program
     {
-        public static Question[] questions;
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,20 +17,6 @@ namespace AnythingIsBetterThanCisco
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            questions = new Question[]
-            {
-                new Question("Which of the following is the name for all computers connected to a network that participate directly in network communication?\n"
-                             + "- servers\n- intermediary devices\n- hosts\n- media",
-                             "hosts"),
-                new Question("When data is encoded as pulses of light, which media is being used to transmit the data?\n"
-                             + "-wireless\n- fibre-optic cable\n- copper cable",
-                             "fibre-optic cable"),
-                new Question("Which two devices are intermediary devices? (Choose two)\n"
-                             + "hosts\n- routers\n- servers\n- switches",
-                             $"routers && switches")
-            };
-
             Application.Run(new Menu());
         }
     }
