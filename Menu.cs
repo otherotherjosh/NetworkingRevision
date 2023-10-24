@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace AnythingIsBetterThanCisco
@@ -30,8 +24,30 @@ namespace AnythingIsBetterThanCisco
             this.Show();
         }
 
-        private void moduCheck1_3_CheckedChanged(object sender, EventArgs e)
+        //private void moduCheck1_3_CheckedChanged(object sender, EventArgs e)
+        //=> ToggleModuleGroup(moduCheck1_3, new CheckBox[] {moduCheck1, moduCheck2, moduCheck3});
+
+        /// <summary>
+        /// Checks or unchecks all checkboxes of a group to match the parent
+        /// </summary>
+        /// <param name="parent"></param>
+        /// <param name="group"></param>
+        private void ToggleModuleGroup(CheckBox parent, CheckBox[] group)
         {
+            foreach (CheckBox checkbox in group)
+            {
+                checkbox.Checked = parent.Checked;
+            }
+        }
+
+        /// <summary>
+        /// Checks or unchecks the parent of a group to match the average
+        /// </summary>
+        /// <param name="parent"></param>
+        /// <param name="group"></param>
+        private void ToggleModuleParent(CheckBox parent, CheckBox[] group)
+        {
+
         }
     }
 }

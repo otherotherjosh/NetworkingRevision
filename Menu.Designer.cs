@@ -31,8 +31,8 @@
             this.startButton = new System.Windows.Forms.Button();
             this.moduCheck1_3 = new System.Windows.Forms.CheckBox();
             this.moduCheck1 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.moduCheck2 = new System.Windows.Forms.CheckBox();
+            this.moduCheck3 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // startButton
@@ -51,7 +51,6 @@
             // 
             // moduCheck1_3
             // 
-            this.moduCheck1_3.Appearance = System.Windows.Forms.Appearance.Button;
             this.moduCheck1_3.AutoSize = true;
             this.moduCheck1_3.BackColor = System.Drawing.SystemColors.Control;
             this.moduCheck1_3.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -59,12 +58,11 @@
             this.moduCheck1_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.moduCheck1_3.Location = new System.Drawing.Point(608, 218);
             this.moduCheck1_3.Name = "moduCheck1_3";
-            this.moduCheck1_3.Size = new System.Drawing.Size(101, 26);
+            this.moduCheck1_3.Size = new System.Drawing.Size(95, 37);
             this.moduCheck1_3.TabIndex = 2;
             this.moduCheck1_3.TabStop = false;
             this.moduCheck1_3.Text = "Modules 1-3";
             this.moduCheck1_3.UseVisualStyleBackColor = false;
-            this.moduCheck1_3.CheckedChanged += new System.EventHandler(this.moduCheck1_3_CheckedChanged);
             // 
             // moduCheck1
             // 
@@ -76,33 +74,33 @@
             this.moduCheck1.Text = "Module 1";
             this.moduCheck1.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // moduCheck2
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(616, 276);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(84, 20);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Module 2";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.moduCheck2.AutoSize = true;
+            this.moduCheck2.Location = new System.Drawing.Point(616, 276);
+            this.moduCheck2.Name = "moduCheck2";
+            this.moduCheck2.Size = new System.Drawing.Size(84, 20);
+            this.moduCheck2.TabIndex = 4;
+            this.moduCheck2.Text = "Module 2";
+            this.moduCheck2.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // moduCheck3
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(616, 302);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(84, 20);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Module 3";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.moduCheck3.AutoSize = true;
+            this.moduCheck3.Location = new System.Drawing.Point(616, 302);
+            this.moduCheck3.Name = "moduCheck3";
+            this.moduCheck3.Size = new System.Drawing.Size(84, 20);
+            this.moduCheck3.TabIndex = 5;
+            this.moduCheck3.Text = "Module 3";
+            this.moduCheck3.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1335, 654);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.moduCheck3);
+            this.Controls.Add(this.moduCheck2);
             this.Controls.Add(this.moduCheck1);
             this.Controls.Add(this.moduCheck1_3);
             this.Controls.Add(this.startButton);
@@ -122,7 +120,7 @@
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.CheckBox moduCheck1_3;
         private System.Windows.Forms.CheckBox moduCheck1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox moduCheck2;
+        private System.Windows.Forms.CheckBox moduCheck3;
     }
 }
