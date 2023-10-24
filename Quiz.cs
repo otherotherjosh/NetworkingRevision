@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,18 +14,31 @@ namespace AnythingIsBetterThanCisco
     public partial class Quiz : Form
     {
         Random rand = new Random();
+        bool showAnswer;
 
         public Quiz()
         {
             InitializeComponent();
 
-            if (rand.Next(0, 2) == 0)
+            if (rand.Next(0, 2) == 1)
             {
                 quizPicture.Image = Properties.Resources.cum;
             }
-            else
+
+            showAnswer = false;
+            label1.Text = "Insert question text here";
+        }
+
+        private void answerButton_Click(object sender, EventArgs e)
+        {
+            showAnswer = showAnswer ? false : true;
+            if (showAnswer)
             {
-                quizPicture.Image = Properties.Resources.gid;
+                answerButton.Text = answerButton.Text.Replace("show", "hide");
+            }
+            if (! showAnswer)
+            {
+                answerButton.Text = answerButton.Text.Replace("hide", "show");
             }
         }
     }

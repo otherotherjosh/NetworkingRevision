@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.quizPicture = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.answerButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.quizPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,13 +47,37 @@
             this.quizPicture.TabIndex = 0;
             this.quizPicture.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(563, 124);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "question";
+            // 
+            // answerButton
+            // 
+            this.answerButton.Font = new System.Drawing.Font("Leelawadee UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton.Location = new System.Drawing.Point(450, 450);
+            this.answerButton.Name = "answerButton";
+            this.answerButton.Size = new System.Drawing.Size(100, 40);
+            this.answerButton.TabIndex = 2;
+            this.answerButton.TabStop = false;
+            this.answerButton.Text = "show answer";
+            this.answerButton.UseVisualStyleBackColor = true;
+            this.answerButton.Click += new System.EventHandler(this.answerButton_Click);
+            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 531);
+            this.Controls.Add(this.answerButton);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.quizPicture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Quiz";
             this.Text = "Quiz";
             ((System.ComponentModel.ISupportInitialize)(this.quizPicture)).EndInit();
@@ -62,5 +88,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox quizPicture;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button answerButton;
     }
 }
