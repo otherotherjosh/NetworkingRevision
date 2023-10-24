@@ -23,17 +23,17 @@ namespace AnythingIsBetterThanCisco
             InitializeComponent();
             questions = new Question[]
             {
-                new Question("Which of the following is the name for all computers connected to a network that participate directly in network communication?\n"
+                new Question("Which of the following is the name for all computers connected to a network that participate directly in network communication?\n\n"
                              + "- servers\n- intermediary devices\n- hosts\n- media",
                              "hosts",
                              Properties.Resources.q1, Properties.Resources.a1),
-                new Question("When data is encoded as pulses of light, which media is being used to transmit the data?\n"
+                new Question("When data is encoded as pulses of light, which media is being used to transmit the data?\n\n"
                              + "- wireless\n- fibre-optic cable\n- copper cable",
                              "fibre-optic cable",
                              Properties.Resources.q2, Properties.Resources.a2),
-                new Question("Which two devices are intermediary devices? (Choose two)\n"
-                             + "hosts\n- routers\n- servers\n- switches",
-                             $"routers && switches",
+                new Question("Which two devices are intermediary devices? (Choose two)\n\n"
+                             + "- hosts\n- routers\n- servers\n- switches",
+                             "routers && switches",
                              Properties.Resources.q3, Properties.Resources.a3)
             };
 
