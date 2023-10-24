@@ -6,9 +6,13 @@ namespace AnythingIsBetterThanCisco
 {
     public partial class Menu : Form
     {
+        private CheckBox[] moduleGroup1_3;
+
         public Menu()
         {
             InitializeComponent();
+
+            moduleGroup1_3 = new CheckBox[] { moduCheck1, moduCheck2, moduCheck3 };
 
             startButton.Enabled = true;
         }
@@ -24,8 +28,8 @@ namespace AnythingIsBetterThanCisco
             this.Show();
         }
 
-        //private void moduCheck1_3_CheckedChanged(object sender, EventArgs e)
-        //=> ToggleModuleGroup(moduCheck1_3, new CheckBox[] {moduCheck1, moduCheck2, moduCheck3});
+        private void moduCheck1_3_Click(object sender, EventArgs e)
+        => ToggleModuleGroup(moduCheck1_3, moduleGroup1_3);
 
         /// <summary>
         /// Checks or unchecks all checkboxes of a group to match the parent
@@ -35,9 +39,7 @@ namespace AnythingIsBetterThanCisco
         private void ToggleModuleGroup(CheckBox parent, CheckBox[] group)
         {
             foreach (CheckBox checkbox in group)
-            {
                 checkbox.Checked = parent.Checked;
-            }
         }
 
         /// <summary>

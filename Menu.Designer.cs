@@ -40,7 +40,7 @@
             this.startButton.Enabled = false;
             this.startButton.Font = new System.Drawing.Font("Leelawadee UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startButton.Location = new System.Drawing.Point(600, 592);
-            this.startButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.startButton.Margin = new System.Windows.Forms.Padding(4);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(133, 49);
             this.startButton.TabIndex = 0;
@@ -63,6 +63,7 @@
             this.moduCheck1_3.TabStop = false;
             this.moduCheck1_3.Text = "Modules 1-3";
             this.moduCheck1_3.UseVisualStyleBackColor = false;
+            this.moduCheck1_3.Click += new System.EventHandler(this.moduCheck1_3_Click);
             // 
             // moduCheck1
             // 
@@ -105,7 +106,7 @@
             this.Controls.Add(this.moduCheck1_3);
             this.Controls.Add(this.startButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
