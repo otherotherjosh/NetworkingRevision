@@ -65,10 +65,13 @@ namespace AnythingIsBetterThanCisco
         private void refresh()
         {
             showAnswer = false;
+            toggleAnswer();
             prevButton.Enabled = questionIndex > 0;
             nextButton.Enabled = questionIndex < questions.Count() - 1;
             textboxQ.Text = questions[questionIndex].Q;
             textboxA.Text = questions[questionIndex].A;
+            questionPicture.Image = questions[questionIndex].ImgQ;
+            answerPicture.Image = questions[questionIndex].ImgA;
         }
     }
 }

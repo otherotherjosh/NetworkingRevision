@@ -30,8 +30,16 @@ namespace AnythingIsBetterThanCisco
 
         public string Q { get => q; set => q = value; }
         public string A { get => a; set => a = value; }
-        public Bitmap ImgQ { get => imgQ; set => imgQ = value; }
-        public Bitmap ImgA { get => imgA; set => imgA = value; }
+        public Bitmap ImgQ 
+        { 
+            get => imgQ; 
+            set => imgQ = value == null ? Properties.Resources.gid : value;
+        }
+        public Bitmap ImgA
+        {
+            get => imgA;
+            set => imgA = value == null ? Properties.Resources.gid : value;
+        }
 
         public Question(string q, string a, Bitmap imgQ = null, Bitmap imgA = null)
         {
