@@ -28,28 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.quizPicture = new System.Windows.Forms.PictureBox();
+            this.questionPicture = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.answerButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.quizPicture)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.answerPicture = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.questionPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.answerPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // quizPicture
+            // questionPicture
             // 
-            this.quizPicture.Cursor = System.Windows.Forms.Cursors.Default;
-            this.quizPicture.ErrorImage = null;
-            this.quizPicture.Image = global::AnythingIsBetterThanCisco.Properties.Resources.gid;
-            this.quizPicture.InitialImage = null;
-            this.quizPicture.Location = new System.Drawing.Point(589, 12);
-            this.quizPicture.Name = "quizPicture";
-            this.quizPicture.Size = new System.Drawing.Size(400, 250);
-            this.quizPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.quizPicture.TabIndex = 0;
-            this.quizPicture.TabStop = false;
+            this.questionPicture.Cursor = System.Windows.Forms.Cursors.Default;
+            this.questionPicture.ErrorImage = null;
+            this.questionPicture.Image = global::AnythingIsBetterThanCisco.Properties.Resources.gid;
+            this.questionPicture.InitialImage = null;
+            this.questionPicture.Location = new System.Drawing.Point(589, 12);
+            this.questionPicture.Name = "questionPicture";
+            this.questionPicture.Size = new System.Drawing.Size(400, 220);
+            this.questionPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.questionPicture.TabIndex = 0;
+            this.questionPicture.TabStop = false;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Leelawadee", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(563, 124);
@@ -68,27 +71,56 @@
             this.answerButton.UseVisualStyleBackColor = true;
             this.answerButton.Click += new System.EventHandler(this.answerButton_Click);
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 238);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(563, 124);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "answer";
+            this.label2.Visible = false;
+            // 
+            // answerPicture
+            // 
+            this.answerPicture.Cursor = System.Windows.Forms.Cursors.Default;
+            this.answerPicture.ErrorImage = null;
+            this.answerPicture.Image = global::AnythingIsBetterThanCisco.Properties.Resources.cum;
+            this.answerPicture.InitialImage = null;
+            this.answerPicture.Location = new System.Drawing.Point(589, 238);
+            this.answerPicture.Name = "answerPicture";
+            this.answerPicture.Size = new System.Drawing.Size(400, 220);
+            this.answerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.answerPicture.TabIndex = 4;
+            this.answerPicture.TabStop = false;
+            this.answerPicture.Visible = false;
+            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 531);
+            this.Controls.Add(this.answerPicture);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.answerButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.quizPicture);
+            this.Controls.Add(this.questionPicture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Quiz";
             this.Text = "Quiz";
-            ((System.ComponentModel.ISupportInitialize)(this.quizPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.questionPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.answerPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox quizPicture;
+        private System.Windows.Forms.PictureBox questionPicture;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button answerButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox answerPicture;
     }
 }

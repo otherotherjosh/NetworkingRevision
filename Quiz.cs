@@ -20,13 +20,9 @@ namespace AnythingIsBetterThanCisco
         {
             InitializeComponent();
 
-            if (rand.Next(0, 2) == 1)
-            {
-                quizPicture.Image = Properties.Resources.cum;
-            }
-
             showAnswer = false;
             label1.Text = "Insert question text here";
+            label2.Text = "Insert answer text here";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -35,10 +31,14 @@ namespace AnythingIsBetterThanCisco
             if (showAnswer)
             {
                 answerButton.Text = answerButton.Text.Replace("show", "hide");
+                label2.Visible = true;
+                answerPicture.Visible = true;
             }
             if (! showAnswer)
             {
                 answerButton.Text = answerButton.Text.Replace("hide", "show");
+                label2.Visible = false;
+                answerPicture.Visible = false;
             }
         }
     }
