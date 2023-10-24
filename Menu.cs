@@ -21,7 +21,20 @@ namespace AnythingIsBetterThanCisco
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            startButton.Enabled = false;
+            Quiz quiz = new Quiz();
+            quiz.StartPosition = FormStartPosition.Manual;
+            quiz.Location = this.Location;
+
+            this.Hide();
+            quiz.ShowDialog();
+
+            this.Location = quiz.Location;
+            this.Show();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
