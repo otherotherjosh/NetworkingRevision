@@ -31,10 +31,5 @@ namespace AnythingIsBetterThanCisco
             this.Location = quiz.Location;
             this.Show();
         }
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
