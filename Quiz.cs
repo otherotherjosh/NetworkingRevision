@@ -13,7 +13,6 @@ namespace AnythingIsBetterThanCisco
 {
     public partial class Quiz : Form
     {
-        Random rand = new Random();
         bool showAnswer;
         Question[] questions;
         int questionIndex = 0;
