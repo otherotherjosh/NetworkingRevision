@@ -29,5 +29,9 @@ namespace AnythingIsBetterThanCisco
             this.Location = quiz.Location;
             this.Show();
         }
+
+        private void moduCheck1_3_CheckedChanged(object sender, EventArgs e)
+        {
+        }
     }
 }
