@@ -34,7 +34,7 @@ namespace AnythingIsBetterThanCisco
                              $"routers && switches")
             };
 
-            
+            refresh();
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -65,10 +65,10 @@ namespace AnythingIsBetterThanCisco
         private void refresh()
         {
             showAnswer = false;
-            prevButton.Enabled = questionIndex >= 0;
-            nextButton.Enabled = questionIndex <= questions.Count();
-            textboxQ.Text = "insert question here";
-            textboxA.Text = "insert answer here";
+            prevButton.Enabled = questionIndex > 0;
+            nextButton.Enabled = questionIndex < questions.Count() - 1;
+            textboxQ.Text = questions[questionIndex].Q;
+            textboxA.Text = questions[questionIndex].A;
         }
     }
 }
