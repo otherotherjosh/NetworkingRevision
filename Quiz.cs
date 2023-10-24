@@ -42,7 +42,7 @@ namespace AnythingIsBetterThanCisco
 
         private void answerButton_Click(object sender, EventArgs e)
         {
-            showAnswer = showAnswer ? false : true;
+            showAnswer = !showAnswer; // swap true/false state of showAnswer
             toggleAnswer();
         }
 
@@ -58,6 +58,9 @@ namespace AnythingIsBetterThanCisco
             refresh();
         }
 
+        /// <summary>
+        /// Shows or hides the answer text and image, depending on state of the show/hide answer button
+        /// </summary>
         private void toggleAnswer()
         {
             answerButton.Text = showAnswer ? "hide answer" : "show answer";
@@ -65,6 +68,9 @@ namespace AnythingIsBetterThanCisco
             answerPicture.Visible = showAnswer;
         }
 
+        /// <summary>
+        /// Updates all screen elements to show currently selected question
+        /// </summary>
         private void refresh()
         {
             showAnswer = false;
