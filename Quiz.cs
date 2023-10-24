@@ -16,13 +16,13 @@ namespace AnythingIsBetterThanCisco
         Random rand = new Random();
         bool showAnswer;
 
-        public Quiz()
+        public Quiz(string question, string answer, Bitmap imgQ, Bitmap imgA)
         {
             InitializeComponent();
 
             showAnswer = false;
-            label1.Text = "Insert question text here";
-            label2.Text = "Insert answer text here";
+            label1.Text = question;
+            label2.Text = answer;
         }
 
         private void answerButton_Click(object sender, EventArgs e)

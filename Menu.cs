@@ -21,14 +21,15 @@ namespace AnythingIsBetterThanCisco
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            Quiz quiz = new Quiz();
-            quiz.StartPosition = FormStartPosition.Manual;
-            quiz.Location = this.Location;
-
             this.Hide();
-            quiz.ShowDialog();
-
-            this.Location = quiz.Location;
+            foreach (Question question in Program.questions)
+            {
+                Quiz quiz = new Quiz(question.Q, question.A, question.ImgQ, question.ImgA);
+                quiz.StartPosition = FormStartPosition.Manual;
+                quiz.Location = this.Location;
+                quiz.ShowDialog();
+                this.Location = quiz.Location;
+            }
             this.Show();
         }
     }
