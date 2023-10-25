@@ -53,6 +53,7 @@
             this.moduCheck16 = new System.Windows.Forms.CheckBox();
             this.moduCheck16_17 = new System.Windows.Forms.CheckBox();
             this.moduCheckAll = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // startButton
@@ -75,7 +76,7 @@
             this.moduCheck1_3.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.moduCheck1_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moduCheck1_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.moduCheck1_3.Location = new System.Drawing.Point(358, 132);
+            this.moduCheck1_3.Location = new System.Drawing.Point(162, 168);
             this.moduCheck1_3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 6);
             this.moduCheck1_3.Name = "moduCheck1_3";
             this.moduCheck1_3.Size = new System.Drawing.Size(80, 31);
@@ -88,7 +89,7 @@
             // moduCheck1
             // 
             this.moduCheck1.AutoSize = true;
-            this.moduCheck1.Location = new System.Drawing.Point(358, 171);
+            this.moduCheck1.Location = new System.Drawing.Point(162, 207);
             this.moduCheck1.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck1.Name = "moduCheck1";
             this.moduCheck1.Size = new System.Drawing.Size(70, 17);
@@ -100,7 +101,7 @@
             // moduCheck2
             // 
             this.moduCheck2.AutoSize = true;
-            this.moduCheck2.Location = new System.Drawing.Point(358, 192);
+            this.moduCheck2.Location = new System.Drawing.Point(162, 228);
             this.moduCheck2.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck2.Name = "moduCheck2";
             this.moduCheck2.Size = new System.Drawing.Size(70, 17);
@@ -112,7 +113,7 @@
             // moduCheck3
             // 
             this.moduCheck3.AutoSize = true;
-            this.moduCheck3.Location = new System.Drawing.Point(358, 213);
+            this.moduCheck3.Location = new System.Drawing.Point(162, 249);
             this.moduCheck3.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck3.Name = "moduCheck3";
             this.moduCheck3.Size = new System.Drawing.Size(70, 17);
@@ -124,7 +125,7 @@
             // moduCheck6
             // 
             this.moduCheck6.AutoSize = true;
-            this.moduCheck6.Location = new System.Drawing.Point(472, 213);
+            this.moduCheck6.Location = new System.Drawing.Point(276, 249);
             this.moduCheck6.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck6.Name = "moduCheck6";
             this.moduCheck6.Size = new System.Drawing.Size(70, 17);
@@ -136,7 +137,7 @@
             // moduCheck5
             // 
             this.moduCheck5.AutoSize = true;
-            this.moduCheck5.Location = new System.Drawing.Point(472, 192);
+            this.moduCheck5.Location = new System.Drawing.Point(276, 228);
             this.moduCheck5.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck5.Name = "moduCheck5";
             this.moduCheck5.Size = new System.Drawing.Size(70, 17);
@@ -148,7 +149,7 @@
             // moduCheck4
             // 
             this.moduCheck4.AutoSize = true;
-            this.moduCheck4.Location = new System.Drawing.Point(472, 171);
+            this.moduCheck4.Location = new System.Drawing.Point(276, 207);
             this.moduCheck4.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck4.Name = "moduCheck4";
             this.moduCheck4.Size = new System.Drawing.Size(70, 17);
@@ -164,7 +165,7 @@
             this.moduCheck4_7.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.moduCheck4_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moduCheck4_7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.moduCheck4_7.Location = new System.Drawing.Point(472, 132);
+            this.moduCheck4_7.Location = new System.Drawing.Point(276, 168);
             this.moduCheck4_7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 6);
             this.moduCheck4_7.Name = "moduCheck4_7";
             this.moduCheck4_7.Size = new System.Drawing.Size(80, 31);
@@ -177,7 +178,7 @@
             // moduCheck10
             // 
             this.moduCheck10.AutoSize = true;
-            this.moduCheck10.Location = new System.Drawing.Point(586, 213);
+            this.moduCheck10.Location = new System.Drawing.Point(390, 249);
             this.moduCheck10.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck10.Name = "moduCheck10";
             this.moduCheck10.Size = new System.Drawing.Size(76, 17);
@@ -189,7 +190,7 @@
             // moduCheck9
             // 
             this.moduCheck9.AutoSize = true;
-            this.moduCheck9.Location = new System.Drawing.Point(586, 192);
+            this.moduCheck9.Location = new System.Drawing.Point(390, 228);
             this.moduCheck9.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck9.Name = "moduCheck9";
             this.moduCheck9.Size = new System.Drawing.Size(70, 17);
@@ -201,7 +202,7 @@
             // moduCheck8
             // 
             this.moduCheck8.AutoSize = true;
-            this.moduCheck8.Location = new System.Drawing.Point(586, 171);
+            this.moduCheck8.Location = new System.Drawing.Point(390, 207);
             this.moduCheck8.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck8.Name = "moduCheck8";
             this.moduCheck8.Size = new System.Drawing.Size(70, 17);
@@ -217,7 +218,7 @@
             this.moduCheck8_10.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.moduCheck8_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moduCheck8_10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.moduCheck8_10.Location = new System.Drawing.Point(586, 132);
+            this.moduCheck8_10.Location = new System.Drawing.Point(390, 168);
             this.moduCheck8_10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 6);
             this.moduCheck8_10.Name = "moduCheck8_10";
             this.moduCheck8_10.Size = new System.Drawing.Size(87, 31);
@@ -230,7 +231,7 @@
             // moduCheck13
             // 
             this.moduCheck13.AutoSize = true;
-            this.moduCheck13.Location = new System.Drawing.Point(358, 357);
+            this.moduCheck13.Location = new System.Drawing.Point(162, 393);
             this.moduCheck13.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck13.Name = "moduCheck13";
             this.moduCheck13.Size = new System.Drawing.Size(76, 17);
@@ -242,7 +243,7 @@
             // moduCheck12
             // 
             this.moduCheck12.AutoSize = true;
-            this.moduCheck12.Location = new System.Drawing.Point(358, 336);
+            this.moduCheck12.Location = new System.Drawing.Point(162, 372);
             this.moduCheck12.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck12.Name = "moduCheck12";
             this.moduCheck12.Size = new System.Drawing.Size(76, 17);
@@ -254,7 +255,7 @@
             // moduCheck11
             // 
             this.moduCheck11.AutoSize = true;
-            this.moduCheck11.Location = new System.Drawing.Point(358, 314);
+            this.moduCheck11.Location = new System.Drawing.Point(162, 350);
             this.moduCheck11.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck11.Name = "moduCheck11";
             this.moduCheck11.Size = new System.Drawing.Size(76, 17);
@@ -270,7 +271,7 @@
             this.moduCheck11_13.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.moduCheck11_13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moduCheck11_13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.moduCheck11_13.Location = new System.Drawing.Point(358, 276);
+            this.moduCheck11_13.Location = new System.Drawing.Point(162, 312);
             this.moduCheck11_13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 6);
             this.moduCheck11_13.Name = "moduCheck11_13";
             this.moduCheck11_13.Size = new System.Drawing.Size(94, 31);
@@ -283,7 +284,7 @@
             // moduCheck15
             // 
             this.moduCheck15.AutoSize = true;
-            this.moduCheck15.Location = new System.Drawing.Point(472, 336);
+            this.moduCheck15.Location = new System.Drawing.Point(276, 372);
             this.moduCheck15.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck15.Name = "moduCheck15";
             this.moduCheck15.Size = new System.Drawing.Size(76, 17);
@@ -295,7 +296,7 @@
             // moduCheck14
             // 
             this.moduCheck14.AutoSize = true;
-            this.moduCheck14.Location = new System.Drawing.Point(472, 314);
+            this.moduCheck14.Location = new System.Drawing.Point(276, 350);
             this.moduCheck14.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck14.Name = "moduCheck14";
             this.moduCheck14.Size = new System.Drawing.Size(76, 17);
@@ -311,7 +312,7 @@
             this.moduCheck14_15.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.moduCheck14_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moduCheck14_15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.moduCheck14_15.Location = new System.Drawing.Point(472, 276);
+            this.moduCheck14_15.Location = new System.Drawing.Point(276, 312);
             this.moduCheck14_15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 6);
             this.moduCheck14_15.Name = "moduCheck14_15";
             this.moduCheck14_15.Size = new System.Drawing.Size(94, 31);
@@ -324,7 +325,7 @@
             // moduCheck7
             // 
             this.moduCheck7.AutoSize = true;
-            this.moduCheck7.Location = new System.Drawing.Point(472, 234);
+            this.moduCheck7.Location = new System.Drawing.Point(276, 270);
             this.moduCheck7.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck7.Name = "moduCheck7";
             this.moduCheck7.Size = new System.Drawing.Size(70, 17);
@@ -336,7 +337,7 @@
             // moduCheck17
             // 
             this.moduCheck17.AutoSize = true;
-            this.moduCheck17.Location = new System.Drawing.Point(586, 336);
+            this.moduCheck17.Location = new System.Drawing.Point(390, 372);
             this.moduCheck17.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck17.Name = "moduCheck17";
             this.moduCheck17.Size = new System.Drawing.Size(76, 17);
@@ -348,7 +349,7 @@
             // moduCheck16
             // 
             this.moduCheck16.AutoSize = true;
-            this.moduCheck16.Location = new System.Drawing.Point(586, 314);
+            this.moduCheck16.Location = new System.Drawing.Point(390, 350);
             this.moduCheck16.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheck16.Name = "moduCheck16";
             this.moduCheck16.Size = new System.Drawing.Size(76, 17);
@@ -364,7 +365,7 @@
             this.moduCheck16_17.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.moduCheck16_17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moduCheck16_17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.moduCheck16_17.Location = new System.Drawing.Point(586, 276);
+            this.moduCheck16_17.Location = new System.Drawing.Point(390, 312);
             this.moduCheck16_17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 6);
             this.moduCheck16_17.Name = "moduCheck16_17";
             this.moduCheck16_17.Size = new System.Drawing.Size(94, 31);
@@ -379,7 +380,7 @@
             this.moduCheckAll.AutoSize = true;
             this.moduCheckAll.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
             this.moduCheckAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moduCheckAll.Location = new System.Drawing.Point(472, 76);
+            this.moduCheckAll.Location = new System.Drawing.Point(276, 112);
             this.moduCheckAll.Margin = new System.Windows.Forms.Padding(2);
             this.moduCheckAll.Name = "moduCheckAll";
             this.moduCheckAll.Size = new System.Drawing.Size(137, 35);
@@ -388,11 +389,26 @@
             this.moduCheckAll.UseVisualStyleBackColor = true;
             this.moduCheckAll.Click += new System.EventHandler(this.moduCheckAll_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.checkBox1.Enabled = false;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(701, 228);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(106, 35);
+            this.checkBox1.TabIndex = 27;
+            this.checkBox1.Text = "SBA Practice";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 531);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.moduCheckAll);
             this.Controls.Add(this.moduCheck17);
             this.Controls.Add(this.moduCheck16);
@@ -455,5 +471,6 @@
         private System.Windows.Forms.CheckBox moduCheck16;
         private System.Windows.Forms.CheckBox moduCheck16_17;
         private System.Windows.Forms.CheckBox moduCheckAll;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
