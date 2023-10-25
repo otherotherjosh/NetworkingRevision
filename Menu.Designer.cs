@@ -52,6 +52,7 @@
             this.moduCheck17 = new System.Windows.Forms.CheckBox();
             this.moduCheck16 = new System.Windows.Forms.CheckBox();
             this.moduCheck16_17 = new System.Windows.Forms.CheckBox();
+            this.moduCheckAll = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // startButton
@@ -357,11 +358,24 @@
             this.moduCheck16_17.UseVisualStyleBackColor = false;
             this.moduCheck16_17.Click += new System.EventHandler(this.moduCheck16_17_Click);
             // 
+            // moduCheckAll
+            // 
+            this.moduCheckAll.AutoSize = true;
+            this.moduCheckAll.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.moduCheckAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moduCheckAll.Location = new System.Drawing.Point(630, 93);
+            this.moduCheckAll.Name = "moduCheckAll";
+            this.moduCheckAll.Size = new System.Drawing.Size(111, 41);
+            this.moduCheckAll.TabIndex = 26;
+            this.moduCheckAll.Text = "All Modules";
+            this.moduCheckAll.UseVisualStyleBackColor = true;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1335, 654);
+            this.Controls.Add(this.moduCheckAll);
             this.Controls.Add(this.moduCheck17);
             this.Controls.Add(this.moduCheck16);
             this.Controls.Add(this.moduCheck16_17);
@@ -423,5 +437,6 @@
         private System.Windows.Forms.CheckBox moduCheck17;
         private System.Windows.Forms.CheckBox moduCheck16;
         private System.Windows.Forms.CheckBox moduCheck16_17;
+        private System.Windows.Forms.CheckBox moduCheckAll;
     }
 }

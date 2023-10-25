@@ -25,6 +25,7 @@ namespace AnythingIsBetterThanCisco
         private ModuleGroup moduleGroup11_13;
         private ModuleGroup moduleGroup14_15;
         private ModuleGroup moduleGroup16_17;
+        private ModuleGroup moduleGroupAll;
 
         public Menu()
         {
@@ -36,6 +37,12 @@ namespace AnythingIsBetterThanCisco
             moduleGroup11_13 = new ModuleGroup(moduCheck11_13, new CheckBox[] { moduCheck11, moduCheck12, moduCheck13 });
             moduleGroup14_15 = new ModuleGroup(moduCheck14_15, new CheckBox[] { moduCheck14, moduCheck15 });
             moduleGroup16_17 = new ModuleGroup(moduCheck16_17, new CheckBox[] { moduCheck16, moduCheck17 });
+
+            moduleGroupAll = new ModuleGroup(moduCheckAll, new CheckBox[] 
+            { 
+                moduCheck1_3, moduCheck4_7, moduCheck8_10, 
+                moduCheck11_13, moduCheck14_15, moduCheck16_17
+            });
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -70,7 +77,7 @@ namespace AnythingIsBetterThanCisco
             int index = 1;
             do
             {
-                m.parent.CheckState = m.group[index].Checked == m.group[0].Checked ?  // is this checkbox in the same state as the first?
+                m.parent.CheckState = m.group[index].CheckState == m.group[0].CheckState ?  // is this checkbox in the same state as the first?
                                     m.group[0].CheckState : CheckState.Indeterminate;  // copy state if yes, indeterminate if no
                 index++;
             } while (m.parent.CheckState != CheckState.Indeterminate && index < m.group.Length);
