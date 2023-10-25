@@ -56,7 +56,8 @@
             this.moduCheck1_3.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.moduCheck1_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moduCheck1_3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.moduCheck1_3.Location = new System.Drawing.Point(608, 218);
+            this.moduCheck1_3.Location = new System.Drawing.Point(616, 203);
+            this.moduCheck1_3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.moduCheck1_3.Name = "moduCheck1_3";
             this.moduCheck1_3.Size = new System.Drawing.Size(95, 37);
             this.moduCheck1_3.TabIndex = 2;
