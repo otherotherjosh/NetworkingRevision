@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
@@ -25,24 +26,34 @@ namespace AnythingIsBetterThanCisco
         private ModuleGroup moduleGroup11_13;
         private ModuleGroup moduleGroup14_15;
         private ModuleGroup moduleGroup16_17;
-        private ModuleGroup moduleGroupAll;
+
+        private Dictionary<CheckBox, CheckBox[]> netacadModules;
+        private Dictionary<CheckBox, CheckBox[]> sbaModules;
+        private Dictionary<CheckBox, Dictionary<CheckBox, CheckBox[]>> modules;
 
         public Menu()
         {
             InitializeComponent();
 
-            moduleGroup1_3 = new ModuleGroup(moduCheck1_3, new CheckBox[] { moduCheck1, moduCheck2, moduCheck3 });
-            moduleGroup4_7 = new ModuleGroup(moduCheck4_7, new CheckBox[] { moduCheck4, moduCheck5, moduCheck6, moduCheck7 });
-            moduleGroup8_10 = new ModuleGroup(moduCheck8_10, new CheckBox[] { moduCheck8, moduCheck9, moduCheck10 });
-            moduleGroup11_13 = new ModuleGroup(moduCheck11_13, new CheckBox[] { moduCheck11, moduCheck12, moduCheck13 });
-            moduleGroup14_15 = new ModuleGroup(moduCheck14_15, new CheckBox[] { moduCheck14, moduCheck15 });
-            moduleGroup16_17 = new ModuleGroup(moduCheck16_17, new CheckBox[] { moduCheck16, moduCheck17 });
+            moduleGroup1_3 = new ModuleGroup(netacadModules1_3, new CheckBox[] { netacadModule1, netacadModule2, netacadModule3 });
+            moduleGroup4_7 = new ModuleGroup(netacadModules4_7, new CheckBox[] { moduCheck4, moduCheck5, moduCheck6, moduCheck7 });
+            moduleGroup8_10 = new ModuleGroup(netacadModules8_10, new CheckBox[] { moduCheck8, moduCheck9, moduCheck10 });
+            moduleGroup11_13 = new ModuleGroup(netacadModules11_13, new CheckBox[] { moduCheck11, moduCheck12, moduCheck13 });
+            moduleGroup14_15 = new ModuleGroup(netacadModules14_15, new CheckBox[] { moduCheck14, moduCheck15 });
+            moduleGroup16_17 = new ModuleGroup(netacadModules16_17, new CheckBox[] { moduCheck16, moduCheck17 });
 
-            moduleGroupAll = new ModuleGroup(moduCheckAll, new CheckBox[] 
-            { 
-                moduCheck1_3, moduCheck4_7, moduCheck8_10, 
-                moduCheck11_13, moduCheck14_15, moduCheck16_17
-            });
+            // dictionary instead of struct
+            netacadModules = new Dictionary<CheckBox, CheckBox[]>();
+            sbaModules = new Dictionary<CheckBox, CheckBox[]>();
+            modules = new Dictionary<CheckBox, Dictionary<CheckBox, CheckBox[]>>();
+
+            netacadModules.Add(netacadModules1_3, new CheckBox[] { netacadModule1, netacadModule2, netacadModule3 });
+            netacadModules.Add(netacadModules4_7, new CheckBox[] { moduCheck4, moduCheck5, moduCheck6, moduCheck7 });
+            netacadModules.Add(netacadModules8_10, new CheckBox[] { moduCheck8, moduCheck9, moduCheck10 });
+            netacadModules.Add(netacadModules11_13, new CheckBox[] { moduCheck11, moduCheck12, moduCheck13 });
+            netacadModules.Add(netacadModules14_15, new CheckBox[] { moduCheck14, moduCheck15 });
+            netacadModules.Add(netacadModules16_17, new CheckBox[] { moduCheck16, moduCheck17 });
+            modules.Add(moduCheckAll, netacadModules);
         }
 
         private void startButton_Click(object sender, EventArgs e)
