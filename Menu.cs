@@ -20,12 +20,22 @@ namespace AnythingIsBetterThanCisco
     public partial class Menu : Form
     {
         private ModuleGroup moduleGroup1_3;
+        private ModuleGroup moduleGroup4_7;
+        private ModuleGroup moduleGroup8_10;
+        private ModuleGroup moduleGroup11_13;
+        private ModuleGroup moduleGroup14_15;
+        private ModuleGroup moduleGroup16_17;
 
         public Menu()
         {
             InitializeComponent();
 
             moduleGroup1_3 = new ModuleGroup(moduCheck1_3, new CheckBox[] { moduCheck1, moduCheck2, moduCheck3 });
+            moduleGroup4_7 = new ModuleGroup(moduCheck4_7, new CheckBox[] { moduCheck4, moduCheck5, moduCheck6, moduCheck7 });
+            moduleGroup8_10 = new ModuleGroup(moduCheck8_10, new CheckBox[] { moduCheck8, moduCheck9, moduCheck10 });
+            moduleGroup11_13 = new ModuleGroup(moduCheck11_13, new CheckBox[] { moduCheck11, moduCheck12, moduCheck13 });
+            moduleGroup14_15 = new ModuleGroup(moduCheck14_15, new CheckBox[] { moduCheck14, moduCheck15 });
+            moduleGroup16_17 = new ModuleGroup(moduCheck16_17, new CheckBox[] { moduCheck16, moduCheck17 });
         }
 
         private void startButton_Click(object sender, EventArgs e)
