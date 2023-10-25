@@ -64,11 +64,15 @@ namespace AnythingIsBetterThanCisco
             UpdateNetacadParent();
         }
 
+        /// <summary>
+        /// Checks or unchecks all checkboxes for netacad modules
+        /// </summary>
         private void ToggleNetacadGroup()
         {
+            bool isChecked = moduCheckAll.Checked;
             foreach (ModuleGroup m in netacadModules)
             {
-                m.parent.Checked = moduCheckAll.Checked;
+                m.parent.Checked = isChecked;
                 ToggleModuleGroup(m);
             }
         }
@@ -90,6 +94,9 @@ namespace AnythingIsBetterThanCisco
             UpdateNetacadParent();
         }
 
+        /// <summary>
+        /// Updates the netacad modules checkbox to match the average
+        /// </summary>
         private void UpdateNetacadParent()
         {
             int index = 1;
