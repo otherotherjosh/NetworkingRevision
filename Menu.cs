@@ -75,6 +75,7 @@ namespace AnythingIsBetterThanCisco
                 m.parent.Checked = isChecked;
                 ToggleModuleGroup(m);
             }
+            CheckStart();
         }
 
         /// <summary>
@@ -106,6 +107,19 @@ namespace AnythingIsBetterThanCisco
                                           netacadModules[0].parent.CheckState : CheckState.Indeterminate;
                 index++;
             } while (moduCheckAll.CheckState != CheckState.Indeterminate && index < netacadModules.Length);
+            CheckStart();
+        }
+
+        private void CheckStart()
+        {
+            bool empty = true;
+            int index = 0;
+            while (empty && index < netacadModules.Length)
+            {
+                empty = !netacadModules[index].parent.Checked;
+                index++;
+            }
+            startButton.Enabled = !empty;
         }
 
         private void moduCheck1_3_Click(object sender, EventArgs e)
