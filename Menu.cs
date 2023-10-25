@@ -84,5 +84,20 @@ namespace AnythingIsBetterThanCisco
         => ToggleModuleParent(moduleGroup1_3);
         private void moduCheck3_Click(object sender, EventArgs e)
         => ToggleModuleParent(moduleGroup1_3);
+
+        private void moduCheck4_7_Click(object sender, EventArgs e)
+        => ToggleModuleGroup(moduleGroup4_7);
+
+        private void moduCheck8_10_Click(object sender, EventArgs e)
+        => ToggleModuleGroup(moduleGroup8_10);
+
+        private void moduCheck11_13_Click(object sender, EventArgs e)
+        => ToggleModuleGroup(moduleGroup11_13);
+
+        private void moduCheck14_15_Click(object sender, EventArgs e)
+        => ToggleModuleGroup(moduleGroup14_15);
+
+        private void moduCheck16_17_Click(object sender, EventArgs e)
+        => ToggleModuleGroup(moduleGroup16_17);
     }
 }

@@ -163,6 +163,7 @@
             this.moduCheck4_7.TabStop = false;
             this.moduCheck4_7.Text = "Modules 4-7";
             this.moduCheck4_7.UseVisualStyleBackColor = false;
+            this.moduCheck4_7.Click += new System.EventHandler(this.moduCheck4_7_Click);
             // 
             // moduCheck10
             // 
@@ -209,6 +210,7 @@
             this.moduCheck8_10.TabStop = false;
             this.moduCheck8_10.Text = "Modules 8-10";
             this.moduCheck8_10.UseVisualStyleBackColor = false;
+            this.moduCheck8_10.Click += new System.EventHandler(this.moduCheck8_10_Click);
             // 
             // moduCheck13
             // 
@@ -255,6 +257,7 @@
             this.moduCheck11_13.TabStop = false;
             this.moduCheck11_13.Text = "Modules 11-13";
             this.moduCheck11_13.UseVisualStyleBackColor = false;
+            this.moduCheck11_13.Click += new System.EventHandler(this.moduCheck11_13_Click);
             // 
             // moduCheck15
             // 
@@ -291,6 +294,7 @@
             this.moduCheck14_15.TabStop = false;
             this.moduCheck14_15.Text = "Modules 14-15";
             this.moduCheck14_15.UseVisualStyleBackColor = false;
+            this.moduCheck14_15.Click += new System.EventHandler(this.moduCheck14_15_Click);
             // 
             // moduCheck7
             // 
@@ -337,6 +341,7 @@
             this.moduCheck16_17.TabStop = false;
             this.moduCheck16_17.Text = "Modules 16-17";
             this.moduCheck16_17.UseVisualStyleBackColor = false;
+            this.moduCheck16_17.Click += new System.EventHandler(this.moduCheck16_17_Click);
             // 
             // Menu
             // 
