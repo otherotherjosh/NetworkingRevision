@@ -87,17 +87,45 @@ namespace AnythingIsBetterThanCisco
 
         private void moduCheck4_7_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup4_7);
+        private void moduCheck4_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup4_7);
+        private void moduCheck5_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup4_7);
+        private void moduCheck6_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup4_7);
+        private void moduCheck7_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup4_7);
 
         private void moduCheck8_10_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup8_10);
+        private void moduCheck8_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup8_10);
+        private void moduCheck9_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup8_10);
+        private void moduCheck10_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup8_10);
 
         private void moduCheck11_13_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup11_13);
+        private void moduCheck11_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup11_13);
+        private void moduCheck12_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup11_13);
+        private void moduCheck13_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup11_13);
 
         private void moduCheck14_15_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup14_15);
+        private void moduCheck14_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup14_15);
+        private void moduCheck15_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup14_15);
 
         private void moduCheck16_17_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup16_17);
+        private void moduCheck16_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup16_17);
+        private void moduCheck17_Click(object sender, EventArgs e)
+        => ToggleModuleParent(moduleGroup16_17);
     }
 }

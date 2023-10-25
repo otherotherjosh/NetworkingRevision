@@ -127,6 +127,7 @@
             this.moduCheck6.TabIndex = 9;
             this.moduCheck6.Text = "Module 6";
             this.moduCheck6.UseVisualStyleBackColor = true;
+            this.moduCheck6.Click += new System.EventHandler(this.moduCheck6_Click);
             // 
             // moduCheck5
             // 
@@ -137,6 +138,7 @@
             this.moduCheck5.TabIndex = 8;
             this.moduCheck5.Text = "Module 5";
             this.moduCheck5.UseVisualStyleBackColor = true;
+            this.moduCheck5.Click += new System.EventHandler(this.moduCheck5_Click);
             // 
             // moduCheck4
             // 
@@ -147,6 +149,7 @@
             this.moduCheck4.TabIndex = 7;
             this.moduCheck4.Text = "Module 4";
             this.moduCheck4.UseVisualStyleBackColor = true;
+            this.moduCheck4.Click += new System.EventHandler(this.moduCheck4_Click);
             // 
             // moduCheck4_7
             // 
@@ -174,6 +177,7 @@
             this.moduCheck10.TabIndex = 13;
             this.moduCheck10.Text = "Module 10";
             this.moduCheck10.UseVisualStyleBackColor = true;
+            this.moduCheck10.Click += new System.EventHandler(this.moduCheck10_Click);
             // 
             // moduCheck9
             // 
@@ -184,6 +188,7 @@
             this.moduCheck9.TabIndex = 12;
             this.moduCheck9.Text = "Module 9";
             this.moduCheck9.UseVisualStyleBackColor = true;
+            this.moduCheck9.Click += new System.EventHandler(this.moduCheck9_Click);
             // 
             // moduCheck8
             // 
@@ -194,6 +199,7 @@
             this.moduCheck8.TabIndex = 11;
             this.moduCheck8.Text = "Module 8";
             this.moduCheck8.UseVisualStyleBackColor = true;
+            this.moduCheck8.Click += new System.EventHandler(this.moduCheck8_Click);
             // 
             // moduCheck8_10
             // 
@@ -221,6 +227,7 @@
             this.moduCheck13.TabIndex = 17;
             this.moduCheck13.Text = "Module 13";
             this.moduCheck13.UseVisualStyleBackColor = true;
+            this.moduCheck13.Click += new System.EventHandler(this.moduCheck13_Click);
             // 
             // moduCheck12
             // 
@@ -231,6 +238,7 @@
             this.moduCheck12.TabIndex = 16;
             this.moduCheck12.Text = "Module 12";
             this.moduCheck12.UseVisualStyleBackColor = true;
+            this.moduCheck12.Click += new System.EventHandler(this.moduCheck12_Click);
             // 
             // moduCheck11
             // 
@@ -241,6 +249,7 @@
             this.moduCheck11.TabIndex = 15;
             this.moduCheck11.Text = "Module 11";
             this.moduCheck11.UseVisualStyleBackColor = true;
+            this.moduCheck11.Click += new System.EventHandler(this.moduCheck11_Click);
             // 
             // moduCheck11_13
             // 
@@ -268,6 +277,7 @@
             this.moduCheck15.TabIndex = 20;
             this.moduCheck15.Text = "Module 15";
             this.moduCheck15.UseVisualStyleBackColor = true;
+            this.moduCheck15.Click += new System.EventHandler(this.moduCheck15_Click);
             // 
             // moduCheck14
             // 
@@ -278,6 +288,7 @@
             this.moduCheck14.TabIndex = 19;
             this.moduCheck14.Text = "Module 14";
             this.moduCheck14.UseVisualStyleBackColor = true;
+            this.moduCheck14.Click += new System.EventHandler(this.moduCheck14_Click);
             // 
             // moduCheck14_15
             // 
@@ -305,6 +316,7 @@
             this.moduCheck7.TabIndex = 22;
             this.moduCheck7.Text = "Module 7";
             this.moduCheck7.UseVisualStyleBackColor = true;
+            this.moduCheck7.Click += new System.EventHandler(this.moduCheck7_Click);
             // 
             // moduCheck17
             // 
@@ -315,6 +327,7 @@
             this.moduCheck17.TabIndex = 25;
             this.moduCheck17.Text = "Module 17";
             this.moduCheck17.UseVisualStyleBackColor = true;
+            this.moduCheck17.Click += new System.EventHandler(this.moduCheck17_Click);
             // 
             // moduCheck16
             // 
@@ -325,6 +338,7 @@
             this.moduCheck16.TabIndex = 24;
             this.moduCheck16.Text = "Module 16";
             this.moduCheck16.UseVisualStyleBackColor = true;
+            this.moduCheck16.Click += new System.EventHandler(this.moduCheck16_Click);
             // 
             // moduCheck16_17
             // 
