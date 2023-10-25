@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
@@ -19,13 +20,13 @@ namespace AnythingIsBetterThanCisco
 
     public partial class Menu : Form
     {
+        private ModuleGroup[] netacadModules;
         private ModuleGroup moduleGroup1_3;
         private ModuleGroup moduleGroup4_7;
         private ModuleGroup moduleGroup8_10;
         private ModuleGroup moduleGroup11_13;
         private ModuleGroup moduleGroup14_15;
         private ModuleGroup moduleGroup16_17;
-        private ModuleGroup moduleGroupAll;
 
         public Menu()
         {
@@ -37,12 +38,7 @@ namespace AnythingIsBetterThanCisco
             moduleGroup11_13 = new ModuleGroup(moduCheck11_13, new CheckBox[] { moduCheck11, moduCheck12, moduCheck13 });
             moduleGroup14_15 = new ModuleGroup(moduCheck14_15, new CheckBox[] { moduCheck14, moduCheck15 });
             moduleGroup16_17 = new ModuleGroup(moduCheck16_17, new CheckBox[] { moduCheck16, moduCheck17 });
-
-            moduleGroupAll = new ModuleGroup(moduCheckAll, new CheckBox[] 
-            { 
-                moduCheck1_3, moduCheck4_7, moduCheck8_10, 
-                moduCheck11_13, moduCheck14_15, moduCheck16_17
-            });
+            netacadModules = new ModuleGroup[] { moduleGroup1_3, moduleGroup4_7, moduleGroup8_10, moduleGroup11_13, moduleGroup14_15, moduleGroup16_17 };
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -65,6 +61,16 @@ namespace AnythingIsBetterThanCisco
         {
             foreach (CheckBox checkbox in m.group)
                 checkbox.Checked = m.parent.Checked;
+            UpdateNetacadParent();
+        }
+
+        private void ToggleNetacadGroup()
+        {
+            foreach (ModuleGroup m in netacadModules)
+            {
+                m.parent.Checked = moduCheckAll.Checked;
+                ToggleModuleGroup(m);
+            }
         }
 
         /// <summary>
@@ -72,67 +78,82 @@ namespace AnythingIsBetterThanCisco
         /// </summary>
         /// <param name="parent"></param>
         /// <param name="group"></param>
-        private void ToggleModuleParent(ModuleGroup m)
+        private void UpdateModuleParent(ModuleGroup m)
         {
             int index = 1;
             do
             {
                 m.parent.CheckState = m.group[index].CheckState == m.group[0].CheckState ?  // is this checkbox in the same state as the first?
-                                    m.group[0].CheckState : CheckState.Indeterminate;  // copy state if yes, indeterminate if no
+                                      m.group[0].CheckState : CheckState.Indeterminate;  // copy state if yes, indeterminate if no
                 index++;
             } while (m.parent.CheckState != CheckState.Indeterminate && index < m.group.Length);
+            UpdateNetacadParent();
+        }
+
+        private void UpdateNetacadParent()
+        {
+            int index = 1;
+            do
+            {
+                moduCheckAll.CheckState = netacadModules[index].parent.CheckState == netacadModules[0].parent.CheckState ?
+                                          netacadModules[0].parent.CheckState : CheckState.Indeterminate;
+                index++;
+            } while (moduCheckAll.CheckState != CheckState.Indeterminate && index < netacadModules.Length);
         }
 
         private void moduCheck1_3_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup1_3);
         private void moduCheck1_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup1_3);
+        => UpdateModuleParent(moduleGroup1_3);
         private void moduCheck2_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup1_3);
+        => UpdateModuleParent(moduleGroup1_3);
         private void moduCheck3_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup1_3);
+        => UpdateModuleParent(moduleGroup1_3);
 
         private void moduCheck4_7_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup4_7);
         private void moduCheck4_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup4_7);
+        => UpdateModuleParent(moduleGroup4_7);
         private void moduCheck5_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup4_7);
+        => UpdateModuleParent(moduleGroup4_7);
         private void moduCheck6_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup4_7);
+        => UpdateModuleParent(moduleGroup4_7);
         private void moduCheck7_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup4_7);
+        => UpdateModuleParent(moduleGroup4_7);
 
         private void moduCheck8_10_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup8_10);
         private void moduCheck8_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup8_10);
+        => UpdateModuleParent(moduleGroup8_10);
         private void moduCheck9_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup8_10);
+        => UpdateModuleParent(moduleGroup8_10);
         private void moduCheck10_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup8_10);
+        => UpdateModuleParent(moduleGroup8_10);
 
         private void moduCheck11_13_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup11_13);
         private void moduCheck11_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup11_13);
+        => UpdateModuleParent(moduleGroup11_13);
         private void moduCheck12_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup11_13);
+        => UpdateModuleParent(moduleGroup11_13);
         private void moduCheck13_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup11_13);
+        => UpdateModuleParent(moduleGroup11_13);
 
         private void moduCheck14_15_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup14_15);
         private void moduCheck14_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup14_15);
+        => UpdateModuleParent(moduleGroup14_15);
         private void moduCheck15_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup14_15);
+        => UpdateModuleParent(moduleGroup14_15);
 
         private void moduCheck16_17_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup16_17);
         private void moduCheck16_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup16_17);
+        => UpdateModuleParent(moduleGroup16_17);
         private void moduCheck17_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup16_17);
+        => UpdateModuleParent(moduleGroup16_17);
+
+        private void moduCheckAll_Click(object sender, EventArgs e)
+        => ToggleNetacadGroup();
     }
 }
