@@ -26,8 +26,6 @@ namespace AnythingIsBetterThanCisco
             InitializeComponent();
 
             moduleGroup1_3 = new ModuleGroup(moduCheck1_3, new CheckBox[] { moduCheck1, moduCheck2, moduCheck3 });
-
-            startButton.Enabled = true;
         }
 
         private void startButton_Click(object sender, EventArgs e)
