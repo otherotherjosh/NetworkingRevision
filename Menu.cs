@@ -53,7 +53,7 @@ namespace AnythingIsBetterThanCisco
             netacadModules.Add(netacadModules11_13, new CheckBox[] { moduCheck11, moduCheck12, moduCheck13 });
             netacadModules.Add(netacadModules14_15, new CheckBox[] { moduCheck14, moduCheck15 });
             netacadModules.Add(netacadModules16_17, new CheckBox[] { moduCheck16, moduCheck17 });
-            modules.Add(moduCheckAll, netacadModules);
+            modules.Add(netacadModulesAll, netacadModules);
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -94,14 +94,43 @@ namespace AnythingIsBetterThanCisco
             } while (m.parent.CheckState != CheckState.Indeterminate && index < m.group.Length);
         }
 
+        private void ToggleModuleParent(CheckBox parent)
+        {
+            
+        }
+
+        private void ToggleModuleGroup(CheckBox parent)
+        {
+            if (modules.Keys.Contains(parent))
+            {
+                foreach (CheckBox value in modules[parent].Keys)
+                {
+                    value.Checked = parent.Checked;
+                    ToggleModuleGroup(value);
+                }
+                return;
+            }
+            foreach (CheckBox key in modules.Keys)
+            {
+                if (modules[key].Keys.Contains(parent))
+                {
+                    foreach (CheckBox value in modules[key][parent])
+                    {
+                        value.Checked = parent.Checked;
+                    }
+                    return;
+                }
+            }
+        }
+
         private void moduCheck1_3_Click(object sender, EventArgs e)
-        => ToggleModuleGroup(moduleGroup1_3);
+        => ToggleModuleGroup(netacadModules1_3);
         private void moduCheck1_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup1_3);
+        => ToggleModuleParent(netacadModules1_3);
         private void moduCheck2_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup1_3);
+        => ToggleModuleParent(netacadModules1_3);
         private void moduCheck3_Click(object sender, EventArgs e)
-        => ToggleModuleParent(moduleGroup1_3);
+        => ToggleModuleParent(netacadModules1_3);
 
         private void moduCheck4_7_Click(object sender, EventArgs e)
         => ToggleModuleGroup(moduleGroup4_7);
@@ -145,5 +174,8 @@ namespace AnythingIsBetterThanCisco
         => ToggleModuleParent(moduleGroup16_17);
         private void moduCheck17_Click(object sender, EventArgs e)
         => ToggleModuleParent(moduleGroup16_17);
+
+        private void netacadModulesAll_Click(object sender, EventArgs e)
+        => ToggleModuleGroup(netacadModulesAll);
     }
 }
